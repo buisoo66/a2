@@ -1,0 +1,243 @@
+/************************
+  [ TABLE  OF CONTENTS ]
+    1- General styles
+    2- Header
+	3- About-us 
+	4- Issues
+	5- Events
+	6- Gallery 
+	7- Contact
+	8- Footer
+	9- Collecting
+   10- back-to-top button
+*************************/
+
+
+/*** 1- general styles ***/
+
+* { box-sizing: border-box; }
+
+body { font-family: 'Exo', 'sans-serif'; }
+
+header, section, footer { display: block; } 
+
+a { color: #fff; }
+
+.main-p { font-size: 21px !important; font-weight: 300; }
+
+.gray-ground { background-color: #f2f2f2; }
+
+/*** /end general styles ***/
+
+
+/*** 2- header ***/
+
+header .navbar .navbar-brand {
+	font-size: 50px;
+	font-weight: bold;
+	color: #076799;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	font-family: cursive, 'Poiret';
+	
+}
+
+header .navbar .navbar-brand span { color: #f44336; }
+
+header .carousel-caption h2 { font-size: 50px; }
+
+header .carousel-caption p {
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-top: 12px;
+}
+
+@media (max-width: 500px) {
+	header .carousel-caption h2 { font-size: 26px; }
+	
+	header .carousel-caption p { font-size: 14px; }
+}
+
+/*** /end header ***/
+
+
+/*** 3- about us ***/
+
+.about-us .jumbotron { background-color: #fff; }
+
+.about-us .jumbotron p { font-size: 18px; color: #000; }
+
+.about-us .about-img { margin: 75px 0; }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+	.about-us .jumbotron p { font-size: 16px; }
+}
+
+/*** /end about us ***/
+
+
+/*** 4- start issues  ***/
+
+.issues figure q {
+    display: block;
+	font-weight: 600;
+	margin: 20px 0 30px;
+	font-size: 24px;
+}
+
+.issues .media:not(.last) { border-bottom: 2px dotted #f44336; }
+
+.issues .media-object { margin-bottom: 12px; }
+
+@media (max-width: 767px) {
+	.issues .media .media-object {
+		margin: 30px 0 20px;
+		border-radius: 5px;
+	} 
+}
+
+/*** /end issues ***/
+
+
+/*** 5- start events  ***/
+
+.events { padding-top: 60px; }
+
+.events .event { margin: 40px 0px 80px; }
+
+.events .symbols {
+	font-size: 20px;
+	font-weight: bold;
+	margin: 20px 0;
+} 
+
+/*** /end events ***/
+
+
+/*** 6- start gallery  ***/
+
+.gallery .gallery-single { margin-top: 30px; }
+
+/*** /end gallery ***/
+
+
+/*** 7- start contact  ***/
+
+.contact {
+    background-color: #404040;
+    color: #efefef;
+    font-size: 20px;
+}
+
+.contact h2 { color: #eee; }
+
+.contact p { color: #aeaeae !important; }
+
+.contact form { background-color: #262626; padding: 15px 25px; }
+
+.contact form .form-control { margin-top: 20px; }
+
+.contact form input:not(.sub-btn),
+.contact form textarea {
+	background-color: #404040 !important;
+    border-color: #000 !important;
+    padding:20px;
+    color: #efefef !important;
+    font-size: 20px;
+}
+
+.contact form textarea {
+    width: 100%;
+    height: 220px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.contact form .sub-btn {
+	background-color: #f66055;
+	color: #eee;
+	border-color: #f44336;
+	font-size: 22px;
+	font-weight: bold;
+	height: 50px;
+}
+
+.contact .contact-icons {  margin-top: 10px; }
+
+.contact form span.glyphicon {
+    font-size: 30px;
+    color: #f66055;
+} 
+
+@media (max-width: 767px) {
+    .contact .contact-icons {text-align: center !important;}
+}
+
+/*** /end contact ***/
+
+
+/*** 8- start footer  ***/
+
+footer { background-color: #262626; padding: 25px 0; }
+
+footer p { color: #999 !important; font-size: 18px; }
+
+/*** /end footer ***/
+
+
+/*** 9- start collecting ***/
+
+header .carousel-caption button,
+.about-us .jumbotron .btn,
+.events button {
+	background-color: #f44336;
+	border-color: #f44336;
+	width: 125px;
+	font-size: 18px;
+	font-family: cursive, 'sans-serif';
+	margin-top: 18px;
+}
+
+header .carousel-caption button:hover,
+header .carousel-caption button:focus,
+.about-us .jumbotron .btn:hover,
+.about-us .jumbotron .btn:focus,
+.events button:hover,
+.events button:focus {
+	outline: none !important; 
+	border-color: #f44336;
+	background-color: #f44336 !important;
+}
+
+.issues, .gallery, .contact { padding: 60px 0px 75px; }
+
+.issues p, .events p { color: #555; font-size: 16px; }
+
+.issues .main-p, .events .main-p, .gallery .main-p {
+	margin: 18px 0 55px;
+}
+
+/*** /end collecting***/
+
+
+/*** 10- back-to-top ***/
+
+.back-to-top {
+	background-color: rgba(140, 140, 140,.65);
+	width: 55px;
+	height: 55px;
+	font-size: 30px;
+	border-radius: 50%;
+	text-align: center;
+	z-index: 10000;
+	color: #fff;
+	weight: bold;
+	line-height: 65px;
+	cursor: pointer;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	display: none;
+} 
+
+/*** /end back-to-top ***/
